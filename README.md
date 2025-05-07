@@ -1,8 +1,8 @@
-# CDP Node.js Frontend Template
+# pd-cdp-flood-demo-frontend
 
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_cdp-node-frontend-template&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=DEFRA_cdp-node-frontend-template)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_cdp-node-frontend-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DEFRA_cdp-node-frontend-template)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_cdp-node-frontend-template&metric=coverage)](https://sonarcloud.io/summary/new_code?id=DEFRA_cdp-node-frontend-template)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_pd-cdp-flood-demo-frontend&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=DEFRA_pd-cdp-flood-demo-frontend)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_pd-cdp-flood-demo-frontend&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DEFRA_pd-cdp-flood-demo-frontend)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_pd-cdp-flood-demo-frontend&metric=coverage)](https://sonarcloud.io/summary/new_code?id=DEFRA_pd-cdp-flood-demo-frontend)
 
 Core delivery platform Node.js Frontend Template.
 
@@ -37,7 +37,7 @@ easier to use the Node Version Manager [nvm](https://github.com/creationix/nvm)
 To use the correct version of Node.js for this application, via nvm:
 
 ```bash
-cd cdp-node-frontend-template
+cd pd-cdp-flood-demo-frontend
 nvm use
 ```
 
@@ -143,13 +143,13 @@ git config --global core.autocrlf false
 Build:
 
 ```bash
-docker build --target development --no-cache --tag cdp-node-frontend-template:development .
+docker build --target development --no-cache --tag pd-cdp-flood-demo-frontend:development .
 ```
 
 Run:
 
 ```bash
-docker run -p 3000:3000 cdp-node-frontend-template:development
+docker run -p 3000:3000 pd-cdp-flood-demo-frontend:development
 ```
 
 ### Production image
@@ -157,13 +157,13 @@ docker run -p 3000:3000 cdp-node-frontend-template:development
 Build:
 
 ```bash
-docker build --no-cache --tag cdp-node-frontend-template .
+docker build --no-cache --tag pd-cdp-flood-demo-frontend .
 ```
 
 Run:
 
 ```bash
-docker run -p 3000:3000 cdp-node-frontend-template
+docker run -p 3000:3000 pd-cdp-flood-demo-frontend
 ```
 
 ### Docker Compose
