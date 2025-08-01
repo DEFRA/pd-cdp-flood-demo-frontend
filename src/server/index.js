@@ -1,5 +1,6 @@
 import path from 'path'
 import hapi from '@hapi/hapi'
+import Joi from 'joi'
 
 import { config } from '~/src/config/config.js'
 import { nunjucksConfig } from '~/src/config/nunjucks/nunjucks.js'
@@ -61,6 +62,8 @@ export async function createServer() {
     nunjucksConfig,
     router // Register all the controllers/routes defined in src/server/router.js
   ])
+
+  server.validator(Joi)
 
   server.ext('onPreResponse', catchAll)
 
